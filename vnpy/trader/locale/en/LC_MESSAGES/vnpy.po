@@ -121,7 +121,7 @@ msgstr "Market"
 
 #: vnpy\trader\constant.py:70
 msgid "询价"
-msgstr "RFQ"
+msgstr "Request for Quote"
 
 #: vnpy\trader\constant.py:77
 msgid "看涨期权"
@@ -360,11 +360,11 @@ msgstr "Name"
 
 #: vnpy\trader\ui\widget.py:407
 msgid "最新价"
-msgstr "Last"
+msgstr "Last Price"
 
 #: vnpy\trader\ui\widget.py:408
 msgid "成交量"
-msgstr "Volume"
+msgstr "Trading Volume"
 
 #: vnpy\trader\ui\widget.py:409
 msgid "开盘价"
@@ -473,11 +473,11 @@ msgstr "Frozen"
 
 #: vnpy\trader\ui\widget.py:519
 msgid "均价"
-msgstr "Avg Price"
+msgstr "Average Price"
 
 #: vnpy\trader\ui\widget.py:520
 msgid "盈亏"
-msgstr "P&L"
+msgstr "Profit & Loss"
 
 #: vnpy\trader\ui\widget.py:535
 msgid "账号"
@@ -626,4 +626,3 @@ msgstr "Changes to the global configuration will take effect after a restart!"
 #: vnpy\trader\utility.py:209
 msgid "合成日K线必须传入每日收盘时间"
 msgstr "The daily_end parameter is required for generating daily bar"
-
