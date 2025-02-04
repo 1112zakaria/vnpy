@@ -85,11 +85,11 @@ def check_optimization_setting(
 ) -> bool:
     """"""
     if not optimization_setting.generate_settings():
-        output(_("优化参数组合为空，请检查"))
+        output(_("Optimization parameter combinations are empty, please check"))
         return False
 
     if not optimization_setting.target_name:
-        output(_("优化目标未设置，请检查"))
+        output(_("Optimization target not set, please check"))
         return False
 
     return True
@@ -105,8 +105,8 @@ def run_bf_optimization(
     """Run brutal force optimization"""
     settings: List[Dict] = optimization_setting.generate_settings()
 
-    output(_("开始执行穷举算法优化"))
-    output(_("参数优化空间：{}").format(len(settings)))
+    output(_("Starting brute force optimization"))
+    output(_("Parameter optimization space: {}").format(len(settings)))
 
     start: int = perf_counter()
 
@@ -123,7 +123,7 @@ def run_bf_optimization(
 
         end: int = perf_counter()
         cost: int = int((end - start))
-        output(_("穷举算法优化完成，耗时{}秒").format(cost))
+        output(_("Brute force optimization completed, took {} seconds").format(cost))
 
         return results
 
@@ -189,13 +189,13 @@ def run_ga_optimization(
         pop: list = toolbox.population(pop_size)
 
         # Run ga optimization
-        output(_("开始执行遗传算法优化"))
-        output(_("参数优化空间：{}").format(total_size))
-        output(_("每代族群总数：{}").format(pop_size))
-        output(_("优良筛选个数：{}").format(mu))
-        output(_("迭代次数：{}").format(ngen))
-        output(_("交叉概率：{:.0%}").format(cxpb))
-        output(_("突变概率：{:.0%}").format(mutpb))
+        output(_("Starting genetic algorithm optimization"))
+        output(_("Parameter optimization space: {}").format(total_size))
+        output(_("Each generation population size: {}").format(pop_size))
+        output(_("Number of individuals to select for the next generation: {}").format(mu))
+        output(_("Number of iterations: {}").format(ngen))
+        output(_("Crossover probability: {:.0%}").format(cxpb))
+        output(_("Mutation probability: {:.0%}").format(mutpb))
 
         start: int = perf_counter()
 
@@ -213,7 +213,7 @@ def run_ga_optimization(
         end: int = perf_counter()
         cost: int = int((end - start))
 
-        output(_("遗传算法优化完成，耗时{}秒").format(cost))
+        output(_("Genetic algorithm optimization completed, took {} seconds").format(cost))
 
         results: list = list(cache.values())
         results.sort(reverse=True, key=key_func)

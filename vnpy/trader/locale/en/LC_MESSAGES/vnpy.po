@@ -53,11 +53,11 @@ msgstr "Not Traded"
 
 #: vnpy\trader\constant.py:36
 msgid "部分成交"
-msgstr "Part Traded"
+msgstr "Partially Filled"
 
 #: vnpy\trader\constant.py:37
 msgid "全部成交"
-msgstr "All Traded"
+msgstr "Fully Filled"
 
 #: vnpy\trader\constant.py:38
 msgid "已撤销"
@@ -541,11 +541,11 @@ msgstr "Cancel All"
 
 #: vnpy\trader\ui\widget.py:964
 msgid "请输入合约代码"
-msgstr "Please enter the symbol"
+msgstr "Please enter contract code"
 
 #: vnpy\trader\ui\widget.py:964 vnpy\trader\ui\widget.py:969
 msgid "委托失败"
-msgstr "Order failed"
+msgstr "Order Failed"
 
 #: vnpy\trader\ui\widget.py:969
 msgid "请输入委托数量"
@@ -626,4 +626,3 @@ msgstr "Changes to the global configuration will take effect after a restart!"
 #: vnpy\trader\utility.py:209
 msgid "合成日K线必须传入每日收盘时间"
 msgstr "The daily_end parameter is required for generating daily bar"
-
